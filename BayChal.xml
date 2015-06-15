@@ -96,6 +96,9 @@
                                     </value>
                                   </block>
                                 </value>
+                                <statement name="DO0">
+                                  <block type="movement_left" id="438"></block>
+                                </statement>
                                 <value name="IF1">
                                   <block type="logic_compare" id="391" inline="true">
                                     <field name="OP">GT</field>
@@ -111,6 +114,12 @@
                                     </value>
                                   </block>
                                 </value>
+                                <statement name="DO1">
+                                  <block type="movement_right" id="448"></block>
+                                </statement>
+                                <statement name="ELSE">
+                                  <block type="movement_forward" id="459"></block>
+                                </statement>
                                 <next>
                                   <block type="robot_delay" id="134" inline="true">
                                     <value name="DELAY">

@@ -80,6 +80,37 @@
                             </value>
                             <next>
                               <block type="controls_if" id="266" inline="false">
+                                <mutation elseif="1" else="1"></mutation>
+                                <value name="IF0">
+                                  <block type="logic_compare" id="390" inline="true">
+                                    <field name="OP">LT</field>
+                                    <value name="A">
+                                      <block type="sensor_object" id="425">
+                                        <field name="OBJECT">RIGHTSIDE</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="427">
+                                        <field name="NUM">50</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="IF1">
+                                  <block type="logic_compare" id="391" inline="true">
+                                    <field name="OP">GT</field>
+                                    <value name="A">
+                                      <block type="sensor_object" id="426">
+                                        <field name="OBJECT">RIGHTSIDE</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="428">
+                                        <field name="NUM">80</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
                                 <next>
                                   <block type="robot_delay" id="134" inline="true">
                                     <value name="DELAY">
